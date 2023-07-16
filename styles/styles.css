@@ -32,10 +32,11 @@ html {
   font-size: 2rem;
   font-weight: 600;
   color: #fff;
+  cursor: pointer;
 }
 
 .m-t {
-  margin-top: 4rem;
+  margin-top: 2.2rem;
 }
 
 /* HEADER STYLING */
@@ -108,4 +109,57 @@ nav .nav-title {
   line-height: 2.6rem;
   width: 70%;
   margin: 2rem auto 0 auto;
+}
+
+/* Responsive Styling */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  .container {
+    max-width: 100%;
+    padding: 0 1.5rem;
+  }
+
+  .banner-text-box .banner-title {
+    width: 100%;
+    font-size: 4rem;
+  }
+  .banner-text-box .banner-description {
+    width: 100%;
+  }
+  nav li:not(:last-child) {
+    margin-right: 1.6rem;
+  }
+
+  nav .nav-title {
+    font-size: 3rem;
+  }
+}
+/* Mobile Devices */
+/* Tablet and medium devices */
+@media screen and (max-width: 576px) {
+  html {
+    font-size: 56%;
+  }
+  .container {
+    max-width: 100%;
+    padding: 0 2.5rem;
+  }
+  .banner-text-box .banner-title {
+    width: 100%;
+    font-size: 4rem;
+  }
+  .banner-text-box .banner-description {
+    width: 100%;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  nav > ul {
+    flex-wrap: wrap;
+  }
+
+  nav li:not(:last-child) {
+    margin-right: 1.6rem;
+  }
 }
