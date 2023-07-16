@@ -353,6 +353,21 @@ nav .nav-title {
   filter: grayscale(100%);
 }
 
+/* FOOTER SECTION STYLING */
+.footer-text-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0;
+  border-radius: 8px;
+  background: #fff4e7;
+}
+
+.footer-text-box p {
+  font-size: 2rem;
+  color: #424242;
+}
+
 /* Responsive Styling */
 /* Tablet and medium devices */
 @media screen and (min-width: 577px) and (max-width: 992px) {
@@ -434,6 +449,12 @@ nav .nav-title {
   }
   .section-sponsor-title-box p {
     width: 100%;
+  }
+  .footer-text-box {
+    padding: 4rem 2rem;
+  }
+  .footer-text-box p {
+    font-size: 1.7rem;
   }
 }
 /* Mobile Devices */
