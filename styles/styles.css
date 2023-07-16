@@ -17,3 +17,46 @@ html {
   font-weight: 400;
   font-size: 62.5%;
 }
+
+.container {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+/* HEADER STYLING */
+header {
+  background: rgba(255, 144, 14, 0.1);
+  padding: 5rem 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > ul {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li:not(:last-child) {
+  margin-right: 2.6rem;
+}
+
+nav li a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.8rem;
+  color: #424242;
+}
+
+nav .nav-title {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #131313;
+  word-spacing: 2px;
+}
