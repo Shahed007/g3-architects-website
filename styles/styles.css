@@ -23,6 +23,21 @@ html {
   margin: 0 auto;
 }
 
+.btn-primary {
+  display: inline-block;
+  border-radius: 8px;
+  background: #ff900e;
+  padding: 2rem 2.4rem;
+  border: 0px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.m-t {
+  margin-top: 4rem;
+}
+
 /* HEADER STYLING */
 header {
   background: rgba(255, 144, 14, 0.1);
@@ -59,4 +74,38 @@ nav .nav-title {
   font-weight: 700;
   color: #131313;
   word-spacing: 2px;
+}
+
+/* BANNER SECTION STYLING */
+.banner {
+  margin-top: 9rem;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  place-items: center;
+  gap: 5rem;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.banner-text-box {
+  text-align: center;
+}
+
+.banner-text-box .banner-title {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #131313;
+  word-spacing: 2px;
+  width: 42%;
+  margin: 0 auto;
+}
+
+.banner-text-box .banner-description {
+  font-size: 1.6rem;
+  color: #727272;
+  line-height: 2.6rem;
+  width: 70%;
+  margin: 2rem auto 0 auto;
 }
