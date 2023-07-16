@@ -41,6 +41,7 @@ html {
 
 section {
   margin-top: 8.5rem;
+  padding: 0 1rem;
 }
 /* HEADER STYLING */
 header {
@@ -115,13 +116,13 @@ nav .nav-title {
 }
 
 /* FEATURES SECTION STYLING */
-.section-features-container {
+.section-team-container {
   display: flex;
   align-items: center;
   gap: 7rem;
 }
 
-.section-features-column-title {
+.section-team-column-title {
   font-size: 3.5rem;
   color: #727272;
   font-weight: 500;
@@ -129,14 +130,16 @@ nav .nav-title {
   line-height: 5rem;
 }
 
-.section-features-column-title .highlight-1 {
+.section-team-column-title .highlight-1 {
   color: #131313;
+  font-weight: 700;
 }
-.section-features-column-title .highlight-2 {
+.section-team-column-title .highlight-2 {
   color: #ff900e;
+  font-weight: 700;
 }
 
-.section-features-column-description {
+.section-team-column-description {
   color: #727272;
   font-size: 1.6rem;
   line-height: 2rem;
@@ -144,16 +147,21 @@ nav .nav-title {
   margin-bottom: 3rem;
 }
 
-.section-features-column {
-  width: calc((100 - 70px) / 2);
+.section-team-column {
+  width: 46%;
 }
-.section-features-column .section-features-gallery {
+.section-team-column .section-team-gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2.4rem;
 }
 
+.section-team-gallery-item img {
+  width: 100%;
+}
+
 /* Responsive Styling */
+/* Tablet and medium devices */
 @media screen and (min-width: 577px) and (max-width: 992px) {
   .container {
     max-width: 100%;
@@ -175,8 +183,18 @@ nav .nav-title {
     font-size: 3rem;
   }
 }
+
+/* Tablet */
+@media screen and (max-width: 768px) {
+  .section-team-container {
+    flex-direction: column-reverse;
+  }
+
+  .section-team-column {
+    width: 100%;
+  }
+}
 /* Mobile Devices */
-/* Tablet and medium devices */
 @media screen and (max-width: 576px) {
   html {
     font-size: 56%;
