@@ -39,6 +39,9 @@ html {
   margin-top: 2.2rem;
 }
 
+section {
+  margin-top: 8.5rem;
+}
 /* HEADER STYLING */
 header {
   background: rgba(255, 144, 14, 0.1);
@@ -109,6 +112,45 @@ nav .nav-title {
   line-height: 2.6rem;
   width: 70%;
   margin: 2rem auto 0 auto;
+}
+
+/* FEATURES SECTION STYLING */
+.section-features-container {
+  display: flex;
+  align-items: center;
+  gap: 7rem;
+}
+
+.section-features-column-title {
+  font-size: 3.5rem;
+  color: #727272;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  line-height: 5rem;
+}
+
+.section-features-column-title .highlight-1 {
+  color: #131313;
+}
+.section-features-column-title .highlight-2 {
+  color: #ff900e;
+}
+
+.section-features-column-description {
+  color: #727272;
+  font-size: 1.6rem;
+  line-height: 2rem;
+  text-align: justify;
+  margin-bottom: 3rem;
+}
+
+.section-features-column {
+  width: calc((100 - 70px) / 2);
+}
+.section-features-column .section-features-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
 }
 
 /* Responsive Styling */
